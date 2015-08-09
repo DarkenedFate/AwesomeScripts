@@ -48,8 +48,6 @@ namespace ReBot
 
 		public override void Combat()
 		{
-            // If energy <= 20 cast berserk
-
 
             if (Cast("Mighty Bash", () => Target.CanParticipateInCombat && Target.IsCastingAndInterruptible())) return;
             if (CastSelfPreventDouble("Healing Touch", () => Me.HealthFraction <= PredatorySwiftnessHeal && HasAura("Predatory Swiftness"))) return;
