@@ -7,7 +7,7 @@ using ReBot.API;
 namespace ReBot
 {
     // WoD Patch 6.0.2
-	[Rotation("Druid Feral - JT Mod v1.0.3", "JT", WoWClass.Druid, Specialization.DruidFeral, 5, 25)]
+	[Rotation("Druid Feral - JT Mod v1.0.4", "JT", WoWClass.Druid, Specialization.DruidFeral, 5, 25)]
 	public class DruidFeral : CombatRotation
 	{
 		// This is important, some mobs can't get the rake debuff. If this is missing the bot would always try rake...
