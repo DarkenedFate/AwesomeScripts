@@ -69,6 +69,7 @@ namespace ReBot
                 if (Cast("Guardian Orb", () => Target.IsElite() || Adds.Count > 1 && Me.HealthFraction <= GuardianOrbHealthFraction)) return;
 
                 if (Cast("Berserk", () => Me.GetPower(WoWPowerType.Energy) <= 20)) return;
+				if (CastSelf("Rejuvenation", () => Me.HealthFraction <= 0.75 && !HasAura("Rejuvenation"))) return;
 
                 DoSingleTargetRotation();
             }
